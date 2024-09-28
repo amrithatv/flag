@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flags of the World</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+   <header>
+    <nav>
+        <h1>WHERE IN THE WORLD?</h1>
+        <button id="darkModeToggle">Dark Mode</button>
+    </nav>
+    <div class="search">
+        <input type="text" id="search" placeholder="Search for a country...">
+        <button id="searchButton"><i class="fa-solid fa-search"></i></button>
+    </div>
+    <select id="regionFilter">
+        <option value="all">Filter by Region</option>
+        <option value="Africa">Africa</option>
+        <option value="Americas">Americas</option>
+        <option value="Asia">Asia</option>
+        <option value="Europe">Europe</option>
+        <option value="Oceania">Oceania</option>
+    </select>
+    
+</header>
+
+
+    <main id="flagsContainer">
+        
+    </main>
+
+    
+    <div id="countryModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalDetails"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
